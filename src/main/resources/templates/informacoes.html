@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações</title>
+    <link rel="stylesheet" href="/css/estilo.css"/>
+    
+</head>
+<body>
+    <fieldset class="index">
+        <table class="texto">
+        <thead>
+            <tr>
+                <th>NOME DO CARD</th>
+                <th>NÍVEL </th>
+                <th>TIPO</th>
+                <th>PONTOS ATK/DEF</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td th:text="${card.nome}"></td>
+                <td th:text="${card.nivel}"></td>
+                <td th:text="${card.tipo}"></td>
+                <td th:text="${card.pontos}"></td>
+            </tr>
+        </tbody>
+        </table>
+    </fieldset>
+
+    <div class="flex-container">
+        <a href="/cadastrados"><button>MOSTRAR TODOS</button></a>
+        <a href="/"><button> PAGINA INICIAL</button></a>
+    </div>
+    
+       
+    
+
+
+</body>
+</html>

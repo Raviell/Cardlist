@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrados</title>
+    <link rel="stylesheet" href="/css/estilo.css"/>
+   
+</head>
+<body>
+    <fieldset class="flex-container">
+    
+    <table class="texto">
+        <thead>
+            <tr>
+                <th>CARD</th>
+                <th>EDITAR</th>
+                <th>EXCLUIR</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr th:each="card : ${lista}">
+
+                <td>
+                    <a th:href="@{/detalhes/{id}(id=${card.id})}" th:text="${card.nome}">NOME</a>
+                </td> 
+                <td>
+                    <a th:href="@{/editar/{id}(id=${card.id})}"><button>EDITAR</button></a>
+                </td>
+                <td>
+                    <a th:href="@{/deletar/{id}(id=${card.id})}"><button>EXCLUIR</button></a> 
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </fieldset>
+    
+    <div class="botao-externo">
+        <a href="/"><button> PÁGINA INICIAL</button></a>
+    </div>
+
+    
+    
+</body>
+</html>

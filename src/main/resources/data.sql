@@ -1,0 +1,11 @@
+create table card (id int auto_increment  primary key, nome varchar(250) not null, nivel varchar(250) not null, tipo varchar(250) not null, pontos varchar(250) not null);
+insert into card (id, nome, nivel, tipo, pontos) values (1, 'Blue-Eyes White Dragon', '8', 'Dragon/Normal', '3000/2500');
+insert into card (id, nome, nivel, tipo, pontos) values (2, 'Dark Magician', '7', 'Spellcaster/Normal', '2500/2100');
+insert into card (id, nome, nivel, tipo, pontos) values (3, 'Summoned Skull', '6', 'Fiend/Normal', '2500/1200');
+insert into card (id, nome, nivel, tipo, pontos) values (4, 'Gaia The Fierce Knight', '7', 'Warrior/Normal', '2300/2100');
+insert into card (id, nome, nivel, tipo, pontos) values (5, 'Curse of Dragon', '5', 'Dragon/Normal', '2000/1500');
+insert into card (id, nome, nivel, tipo, pontos) values (6, 'Kuriboh', '1', 'Fiend/Effect', '300/200');
+insert into card (id, nome, nivel, tipo, pontos) values (7, 'Black Luster Soldier', '8', 'Warior/Ritual', '3000/2500');
+insert into card (id, nome, nivel, tipo, pontos) values (8, 'La Jinn the Mystical Genie of the Lamp', '4', 'Fiend/Normal', '1800/1000');
+insert into card (id, nome, nivel, tipo, pontos) values (9, 'Battle Ox', '4', 'Beast-Warrior/Normal', '1700/1000');
+insert into card (id, nome, nivel, tipo, pontos) values (10, 'Chaos Necromancer', '1', 'Fiend/Effect', '0/0');

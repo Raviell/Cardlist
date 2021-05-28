@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardlist - Novo card</title>
+    <link rel="stylesheet" href="/css/estilo.css"/>
+    
+   
+</head>
+<body>
+   <div class="titulo">
+       CARDLIST - COLEÇÃO VIRTUAL
+   </div>
+
+    <fieldset>
+    <div class="flex-container">
+    <form method="POST" action="/adicionar">
+        
+        <div class="subtitulo">
+            PREENCHA TODOS OS CAMPOS
+        </div>
+
+        <div class="campo">
+        <label for="nome"></label>
+        <input type="text" name="nome" id="nome" placeholder="NOME" size="40" th:value="${card.nome}" />
+        </div>
+
+        <div class="campo">
+        <label for="nivel"></label>
+        <input type="text" name="nivel" id="nivel" placeholder="NÍVEL" size="40" th:value="${card.nivel}" />
+        </div>
+
+        <div class="campo">
+        <label for="tipo"></label>
+        <input type="text" name="tipo" id="tipo" placeholder="TIPO" size="40" th:value="${card.tipo}" />
+        </div>
+
+        <div class="campo">
+        <label for="pontos">    </label>
+        <input type="text" name="pontos" id="pontos" placeholder="PONTOS" size="40" th:value="${card.pontos}"/>
+        </div>
+
+        <input type="hidden" name="id" id="id" th:value="${card.id}"/>
+
+        <div class="flex-container">
+        <input type="submit" value="GRAVAR"/>
+        </div>    
+    </form>
+    </div>
+    </fieldset>
+    <div class="botao-externo">
+    <a href="/"><button> PÁGINA INICIAL</button></a>
+    </div>
+
+    
+
+    
+</body>
+</html>
