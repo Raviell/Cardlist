@@ -1,3 +1,5 @@
+
+
 fieldset {
     
     width: 50%; 
@@ -11,6 +13,7 @@ fieldset {
     margin: 5px;
     width: 50%; 
     margin: 0px auto;
+    padding: 5px;
   }
 
   .subtitulo{
@@ -39,11 +42,12 @@ fieldset {
     padding: 10px;
     
   }
-  .index{
+  .index {
     width: 50%; 
     margin: 0px auto;
     padding: 20px;
-    
+    border-color: black;
+    border: 2px;
   }
 
 .organizar {
@@ -58,4 +62,8 @@ fieldset {
 }
 .centralizar {
     margin:auto;
+}
+
+.margin-left{
+    margin-left: 5px;
 }

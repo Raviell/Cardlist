@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastrados</title>
     <link rel="stylesheet" href="/css/estilo.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    
    
 </head>
 <body>
-    <fieldset class="flex-container">
+    <fieldset class="border border-info" style="display: flex;justify-content: center; margin: 25px auto; width: 50%; padding: 10px;">
     
     <table class="texto">
         <thead>
@@ -27,10 +29,10 @@
                     <a th:href="@{/detalhes/{id}(id=${card.id})}" th:text="${card.nome}">NOME</a>
                 </td> 
                 <td>
-                    <a th:href="@{/editar/{id}(id=${card.id})}"><button>EDITAR</button></a>
+                    <a th:href="@{/editar/{id}(id=${card.id})}"><button type="button" class="btn btn-outline-warning">EDITAR</button></a>
                 </td>
                 <td>
-                    <a th:href="@{/deletar/{id}(id=${card.id})}"><button>EXCLUIR</button></a> 
+                    <a th:href="@{/deletar/{id}(id=${card.id})}"><button type="button" class="btn btn-outline-danger">EXCLUIR</button></a> 
                 </td>
             </tr>
         </tbody>
@@ -38,10 +40,11 @@
     </fieldset>
     
     <div class="botao-externo">
-        <a href="/"><button> PÁGINA INICIAL</button></a>
+        <a href="/"><button type="button" class="btn btn-outline-secondary" > PÁGINA INICIAL</button></a>
     </div>
 
     
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
 </body>
 </html>
