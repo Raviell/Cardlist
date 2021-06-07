@@ -26,7 +26,7 @@
             <tr th:each="card : ${lista}">
 
                 <td>
-                    <a th:href="@{/detalhes/{id}(id=${card.id})}" th:text="${card.nome}">NOME</a>
+                    <a th:href="@{/detalhes/{id}(id=${card.id})}" th:text="${card.nome}"></a>
                 </td> 
                 <td>
                     <a th:href="@{/editar/{id}(id=${card.id})}"><button type="button" class="btn btn-outline-warning">EDITAR</button></a>
